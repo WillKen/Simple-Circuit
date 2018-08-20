@@ -1,0 +1,106 @@
+【【【【【【【【【【【【【【【【全加器】】】】】】】】】】】】】】】
+
+在主界面按【1】 进入create，输入如下数字来创建 2个与门 1个或门 2个异或门，【-1】退出：
+
+1
+2
+2
+1
+4
+2
+-1
+
+在主界面按【3】 进入connect ，输入如下指令，进行连接：
+
+exclusiveOR1_out+exclusiveOR2_in1
+exclusiveOR1_out+and1_in1
+and1_out+or1_in1
+and2_out+or1_in2
+exclusiveOR1_in1+and2_in1
+exclusiveOR1_in2+and2_in2
+exclusiveOR2_in2+and1_in2
+-1
+
+在主界面按【3】 进入set ，输入如下指令（八组中任选一组），进行赋值：  （一次赋值只能赋一组）
+
+exclusiveOR1_in1=0
+exclusiveOR1_in2=0
+exclusiveOR2_in2=0
+-1
+
+exclusiveOR1_in1=0
+exclusiveOR1_in2=0
+exclusiveOR2_in2=1
+-1
+
+exclusiveOR1_in1=0
+exclusiveOR1_in2=1
+exclusiveOR2_in2=0
+-1
+
+exclusiveOR1_in1=0
+exclusiveOR1_in2=1
+exclusiveOR2_in2=1
+-1
+
+exclusiveOR1_in1=1
+exclusiveOR1_in2=0
+exclusiveOR2_in2=0
+-1                   
+
+
+exclusiveOR1_in1=1
+exclusiveOR1_in2=0
+exclusiveOR2_in2=1
+-1
+
+exclusiveOR1_in1=1
+exclusiveOR1_in2=1
+exclusiveOR2_in2=0
+-1
+
+exclusiveOR1_in1=1
+exclusiveOR1_in2=1
+exclusiveOR2_in2=1
+-1
+
+and1_out+and1_in1
+and1_out+and1_in2
+-1
+
+
+在主界面按【5】，运行结果显示后 按【0】 查看每个门的值
+
+在主界面按【4】，换一组数 重新赋值
+
+
+【【【【【【【【【【【【【【【【【【【【【【环 一】】】】】】】】】】】】】】】】】】】】】】
+创建一个非门，然后用如下指令连接
+
+not1_out+not1_in
+
+【【【【【【【【【【【【【【【【【【【【【【环 二】】】】】】】】】】】】】】】】】】】】】】
+ 创建两个与门 用如下指令连接 并将剩余引脚任意赋值   运行时会报错
+
+and1_out+and2_in1
+and2_out+and1_in1
+-1
+
+【【【【【【【【【【【【【【【【【【【【【【输出相连】】】】】】】】】】】】】】】】】】】】】】
+创建两个与门 用如下指令连接 
+and1_out+and2_out
+
+【【【【【【【【【【【【【【【【【【【【【【将与非门接成非门】】】】】】】】】】】】】】】】】】】】】】
+创建一个与非门，用如下指令连接
+nand1_in1+nand1_in2
+用如下指令赋值
+nand1_in1=1
+
+或
+
+nand1_in1=0
+
+
+
+
+ 
